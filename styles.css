@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #536276;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1F2937;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.header > h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+    width: 100%;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+.player {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 15px;
+}
+
+#player-choice {
+    flex: 1;
+
+    margin-left: auto;
+    text-align: center;
+}
+
+.computer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 15px;
+}
+
+#computer-choice {
+    flex: 1;
+
+    text-align: center;
+}
+
+#computer-score {
+    margin-left: auto;
+}
+
+#state {
+    margin-top: 20px;
+    color: antiquewhite;
+}
+
+.choose-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 20px;
+    width: 100%;
+}
+
+.choose-buttons > div {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rock, #paper, #scissors {
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgb(98, 161, 165);
+    color: white;
+
+    width: 100px;
+    height: 100px;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+    background-color: rgba(98, 161, 165, 0.61);
+}
+
+.playAgain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
+
+#play {
+    text-decoration: none;
+    border: none;
+
+    background-color: rgb(122, 170, 32);
+    color: white;
+
+    width: 100px;
+    height: 30px;
+}
+
+#play:hover {
+    background-color: rgba(122, 170, 32, 0.61);
+}
